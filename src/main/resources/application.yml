@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/flashcards
+    username: postgres
+    password: postgres
+  jpa:
+    open-in-view: false
+    properties:
+      hibernate:
+        default_schema: flashcards
+  flyway:
+    default-schema: ${spring.jpa.properties.hibernate.default_schema}

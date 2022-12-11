@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: <set by Testcontainers dynamically>
+    username: <set by Testcontainers dynamically>
+    password: <set by Testcontainers dynamically>
+  jpa:
+    open-in-view: false
+    properties:
+      hibernate:
+        default_schema: flashcards
+  flyway:
+    default-schema: flashcards
